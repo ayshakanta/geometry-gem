@@ -68,15 +68,28 @@
 
                 <!-- parallelogram card -->
                 <div class="card w-auto bg-base-100 shadow-xl">
-                    <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                    <figure><img src="images/parallelogram.png" alt="rectangle" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title">Rectangle</h2>
+                        <p>Area (A) = w * I</p>
+                        <div class="flex justify-center">
+                            <input id="rectangle-width" class="w-20 text-2xl p-2 rounded-sm  bg-gray-200" type="text"
+                                placeholder="w">
+                            <span class="mr-4 ml-2">cm</span>
+                            <input id="rectangle-length" class="w-20 text-2xl p-2 rounded-sm  bg-gray-200" type="text"
+                                placeholder="l">
+                            <span class="mr-4 ml-2">cm</span>
+                        </div>
+                        <div>
+                            <p>Area : <span id="rectangle-area"></span><span>cm<sup>2</sup></span></p>
+                        </div>
+
+                        <div class="card-actions">
+                            <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
+                
 
                 <!-- rhombus card -->
                 <div class="card w-auto bg-base-100 shadow-xl">
