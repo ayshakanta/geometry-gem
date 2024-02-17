@@ -93,6 +93,7 @@ function calculateParallelogramArea(){
     console.log(parallelogramArea) ;
 
     setInnerTextById("parallelogram-area" , parallelogramArea )
+    setAreaContainer("area-container")
 
     
 }
@@ -109,6 +110,8 @@ function setInnerTextById(elementId , area){
     const elementField = document.getElementById(elementId)
     elementField.innerText = area ;
 }
+
+
 
 
 
